@@ -78,6 +78,7 @@ type Configuration struct {
 	ServiceNameList []string           `yaml:"serviceNameList,omitempty"  valid:"required"`
 	NrfUri          string             `yaml:"nrfUri,omitempty"  valid:"required, url"`
 	NrfCertPem      string             `yaml:"nrfCertPem,omitempty" valid:"optional"`
+	NrfNfInstanceId string             `yaml:"nrfNfInstanceId,omitempty" valid:"optional,uuidv4"`
 	SuciProfiles    []suci.SuciProfile `yaml:"SuciProfile,omitempty"`
 }
 type Logger struct {
